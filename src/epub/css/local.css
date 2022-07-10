@@ -22,12 +22,6 @@ footer{
 }
 /* end letter */
 
-/* acronyn */
-[epub|type~="z3998:acronym"]{
-	font-variant: all-small-caps;
-}
-/* end acronym */
-
 /* diary */
 [epub|type~="z3998:diary-entry"]{
 	margin-left: 0;
