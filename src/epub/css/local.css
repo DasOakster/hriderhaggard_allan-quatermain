@@ -156,6 +156,10 @@ section[epub|type~="epigraph"] > *{
 /* End full-page epigraphs */
 
 /* dedication styling */
+section[epub|type~="dedication"] header{
+	font-variant: all-small-caps;
+}
+
 section[epub|type~="dedication"] p{
 	text-indent: 0;
 }
