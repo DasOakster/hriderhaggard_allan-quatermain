@@ -1,7 +1,5 @@
 @charset "utf-8";
 @namespace epub "http://www.idpf.org/2007/ops";
-@charset "utf-8";
-@namespace epub "http://www.idpf.org/2007/ops";
 
 /* letter */
 footer{
@@ -39,44 +37,30 @@ abbr[epub|type~="se:era"]{
 }
 /* end abbreviations */
 
-/* poems */
-[epub|type~="z3998:poem"] p{
-	text-align: initial;
-	text-indent: 0;
-}
-
+/* poems, songs and verse */
 [epub|type~="z3998:poem"] p + p{
 	margin-top: 1em;
 }
 
-[epub|type~="z3998:poem"] p > span{
-	display: block;
-	padding-left: 1em;
-	text-indent: -1em;
-}
-
-[epub|type~="z3998:poem"] p > span + br{
-	display: none;
-}
-/* end poems */
-
-/* songs and verse */
+[epub|type~="z3998:poem"] p,
 [epub|type~="z3998:song"] p,
 [epub|type~="z3998:verse"] p{
-	text-align: initial;
-	text-indent: 0;
+   text-align: initial;
+   text-indent: 0;
 }
 
+[epub|type~="z3998:poem"] p > span,
 [epub|type~="z3998:song"] p > span,
 [epub|type~="z3998:verse"] p > span{
-	display: block;
-	padding-left: 1em;
-	text-indent: -1em;
+   display: block;
+   padding-left: 1em;
+   text-indent: -1em;
 }
 
+[epub|type~="z3998:poem"] p > span + br,
 [epub|type~="z3998:song"] p > span + br,
 [epub|type~="z3998:verse"] p > span + br{
-	display: none;
+   display: none;
 }
 
 /* song title */
@@ -85,7 +69,7 @@ abbr[epub|type~="se:era"]{
 	margin-bottom: 1em;
 	text-align: center;
 }
-/* end songs and verse */
+/* end poems, songs and verse */
 
 /* indent */
 p span.i1{
